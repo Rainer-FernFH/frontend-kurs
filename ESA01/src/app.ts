@@ -9,7 +9,9 @@ interface Rezept {
 const rezepte: Rezept[] = [
   { titel: 'Rindsgulasch', supermarkt: 'Spar', preis: 4.90 },
   { titel: 'Putengeschnetzeltes', supermarkt: 'Billa', preis: 5.50 },
-  { titel: 'Linseneintopf', supermarkt: 'Hofer', preis: 2.50 }
+  { titel: 'Linseneintopf', supermarkt: 'Hofer', preis: 2.50 }, 
+  { titel: 'Wiener Schnitzel', supermarkt: 'Spar', preis: 6.20 },
+  { titel: 'Kaspressknödel mit Salat', supermarkt: 'Billa', preis: 4.10 }
 ];
 
 // Typisierte Funktion mit Array-Filterung
@@ -26,7 +28,7 @@ function erstelleRezeptKarten(liste: Rezept[]): string {
     return '<p>Keine Rezepte gefunden.</p>';
   }
   return liste
-    .map((r: Rezept) => `<article><h3>${r.titel}</h3><p>${r.supermarkt} — ${r.preis.toFixed(2)} €</p></article>`)
+    .map((r: Rezept) => `<article><h3>${r.titel}</h3><p>${r.supermarkt} - ${r.preis.toFixed(2)} €</p></article>`)
     .join('');
 }
 

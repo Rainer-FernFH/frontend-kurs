@@ -15,7 +15,7 @@
         <li><a href="#konzept">Über das Konzept</a></li>
         <li><a href="#rezept-tipp">Tages-Tipp</a></li>
         <li><a href="#filter">Rezept-Filter</a></li>
-        <li><a href="#einkaufsliste">Einkaufsliste</a></li>
+        <li><a href="#reze">Passende Rezepte</a></li>
       </ul>
     </nav>
   </header>
@@ -51,10 +51,13 @@
       <h3>Rezeptsuche anpassen</h3>
       <form>
         <fieldset>
-          <legend>Supermarkt wählen</legend>
-          <label><input type="checkbox" name="markt" value="spar"> Spar</label>
-          <label><input type="checkbox" name="markt" value="billa"> Billa</label>
-          <label><input type="checkbox" name="markt" value="hofer"> Hofer</label>
+          <label for="markt-select">Supermarkt wählen:</label>
+          <select id="markt-select">
+            <option value="alle">Alle Märkte</option>
+            <option value="Spar">Spar</option>
+            <option value="Billa">Billa</option>
+            <option value="Hofer">Hofer</option>
+          </select>
         </fieldset>
 
         <fieldset>
@@ -65,6 +68,13 @@
         </fieldset>
       </form>
     </aside>
+
+    <!-- Trefferliste -->
+    <section id="rezepte">
+      <h2>Passende Angebote</h2>
+      <aside id="rezept-liste"></aside>
+    </section>
+
 
   </main>
 
@@ -78,6 +88,8 @@
       </ul>
     </nav>
   </footer>
+
+  <script src="dist/app.js" defer></script>
 
 </body>
 </html>
