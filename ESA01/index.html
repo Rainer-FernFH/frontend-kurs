@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Rezeptvorschläge nach Supermarktangeboten</title>
+  <title>SmartCook - Rezeptvorschläge nach Supermarktangeboten</title>
 </head>
 <body>
 
@@ -19,3 +19,66 @@
       </ul>
     </nav>
   </header>
+
+  <!-- Hauptinhaltsbereich der Seite -->
+  <main>
+
+    <!-- Beschreibung des SmartCook-Konzepts -->
+    <section id="konzept">
+      <h2>Sparen beim Kochen mit tagesaktuellen Sonderangeboten</h2>
+      <p>
+        SmartCook verknüpft aktuelle Angebote österreichischer Supermärkte mit passenden Rezeptideen, 
+        um eine preisbewusste Mahlzeitenplanung zu ermöglichen und Lebensmittelverschwendung zu reduzieren.
+      </p>
+    </section>
+
+    <!-- Eigenständiger Artikel: Ein konkreter Rezeptvorschlag -->
+    <article id="rezept-tipp">
+      <h2>Tages-Tipp: Rindsgulasch Spätzle</h2>
+      <p>
+        Dieses Gericht kombiniert Lebensmittelaktionen der aktuellen Woche zu einer kostengünstigen Mahlzeit.
+      </p>
+      
+      <!-- Bild mit semantischer Beschriftung für Barrierefreiheit -->
+      <figure>
+        <img src="rindsgulasch.jpg" alt="Teller mit frischem Rindsgulasch und Kräutern garniert">
+        <figcaption>Abbildung 1: Rindsgulasch – zubereitet mit reduzierten Zutaten aus aktuellen Angeboten.</figcaption>
+      </figure>
+    </article>
+
+    <!-- Ergänzender Inhalt: Filteroptionen für Märkte und Ernährungsformen -->
+    <aside id="filter" aria-label="Rezeptfilter und Präferenzen">
+      <h3>Rezeptsuche anpassen</h3>
+      <form>
+        <fieldset>
+          <legend>Supermarkt wählen</legend>
+          <label><input type="checkbox" name="markt" value="spar"> Spar</label>
+          <label><input type="checkbox" name="markt" value="billa"> Billa</label>
+          <label><input type="checkbox" name="markt" value="hofer"> Hofer</label>
+        </fieldset>
+
+        <fieldset>
+          <legend>Ernährungsweise</legend>
+          <label><input type="radio" name="ernaehrung" value="alle" checked> Alle Gerichte</label>
+          <label><input type="radio" name="ernaehrung" value="vegetarisch"> Vegetarisch</label>
+          <label><input type="radio" name="ernaehrung" value="vegan"> Vegan</label>
+        </fieldset>
+      </form>
+    </aside>
+
+  </main>
+
+  <!-- Fußbereich mit Urheberrechtsangabe und Footer-Navigation -->
+  <footer>
+    <p>&copy; 2026 Rainer Fraunschiel — SED502 Frontend Development</p>
+    <nav aria-label="Fußzeilen-Navigation">
+      <ul>
+        <li><a href="#impressum">Impressum</a></li>
+        <li><a href="#datenschutz">Datenschutz</a></li>
+      </ul>
+    </nav>
+  </footer>
+
+</body>
+</html>
+
