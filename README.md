@@ -1,4 +1,5 @@
-# SED502 - Frontend Development: ESA01-Meine erste Webseite
+# SED502 - Frontend Development
+# ESA01: Meine erste Webseite "SmartCook"
 
 ## SmartCook - Rezeptvorschläge auf Basis aktueller Supermarktangebote
 SmartCook hilft Nutzerinnen und Nutzern dabei, Geld beim Einkauf zu sparen und Lebensmittelverschwendung zu reduzieren. Auf Basis ausgewählter Supermärkte (z. B. Spar, Billa, Hofer) werden geeignete Rezeptvorschläge dynamisch gefiltert und dargestellt.
